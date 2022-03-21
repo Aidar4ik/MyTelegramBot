@@ -1,3 +1,6 @@
 bot:
   name: dordoi_storebot
   token: 5224886865:AAETW7BWSgL8uY5I1vEv4PqNClWeeWYx_64
+java:
+  runtime:
+    version=11:
