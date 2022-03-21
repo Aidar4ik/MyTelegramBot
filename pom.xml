@@ -34,7 +34,7 @@
                 <configuration>
                     <appName>AfterDeleteBotInThe</appName>
                     <processTypes>
-                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* App</web>
                     </processTypes>
                 </configuration>
                 <groupId>com.heroku.sdk</groupId>
