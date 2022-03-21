@@ -31,15 +31,23 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.example</groupId>
+                <artifactId>AfterDeleteBotInThe</artifactId>
+                <version>1.0-SNAPSHOT</version>
                 <configuration>
-                    <appName>AfterDeleteBotInThe</appName>
-                    <processTypes>
-                        <web>java -cp target/classes/:target/dependency/* v1.a1.server</web>
-                    </processTypes>
+                    <assembleDirectory>target</assembleDirectory>
+                    <programs>
+                        <program>
+                            <mainClass>App</mainClass>
+                            <name>worker</name>
+                        </program>
+                    </programs>
                 </configuration>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase><goals><goal>assemble</goal></goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
